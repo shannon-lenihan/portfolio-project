@@ -1,0 +1,24 @@
+h1 {
+  font-size: 150px;
+  font-family: "Caveat", cursive;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+.hero {
+  text-align: center;
+  font-family: "Georama", sans-serif;
+  padding: 150px 20px 180px;
+  background-color: aliceblue;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.contact-links {
+  font-size: 24px;
+}
