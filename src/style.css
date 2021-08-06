@@ -1,24 +1,84 @@
+:root {
+  --main-text: rgba(255, 255, 255, 0.6);
+  --emphasis-text: rgba(255, 255, 255, 0.87);
+  --primary-accent: #97c4e1;
+  --secondary-accent: #e197c5;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Georama", sans-serif;
+}
+
 h1 {
   font-size: 150px;
   font-family: "Caveat", cursive;
+  color: var(--primary-accent);
+  opacity: 87%;
 }
 
 h2 {
+  color: var(--emphasis-text);
   font-size: 32px;
   margin-bottom: 0px;
 }
 
+.site {
+  background-color: #1e1e1e;
+}
+
 .hero {
   text-align: center;
-  font-family: "Georama", sans-serif;
-  padding: 150px 20px 180px;
-  background-color: aliceblue;
+  padding: 150px 0px 180px;
 }
 
 .hero p {
+  color: var(--main-text);
   font-size: 18px;
 }
 
-.contact-links {
+.contact-links i {
+  color: var(--secondary-accent);
   font-size: 24px;
+  opacity: 87%;
+}
+
+.project-display {
+  padding: 70px 0px;
+}
+
+.project-display .row {
+  margin: 0px 0px 15px 0px;
+}
+
+.section-heading {
+  padding: 15px 0px;
+  text-align: center;
+  color: var(--emphasis-text);
+  font-size: 36px;
+}
+
+.project {
+  padding: 0px 30px;
+}
+
+.card-img {
+  opacity: 10%;
+  transition: 150ms ease-in-out;
+}
+
+.project-text {
+  color: var(--emphasis-text);
+  font-family: "Caveat", cursive;
+  font-size: 34px;
+  font-weight: bold;
+  transition: 150ms ease-in-out;
+}
+
+.project:hover .card-img {
+  opacity: 0.3;
+}
+
+.project:hover .project-text {
+  opacity: 1;
 }
