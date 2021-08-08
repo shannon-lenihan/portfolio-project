@@ -8,10 +8,11 @@
 body {
   background-color: #121212;
   font-family: "Georama", sans-serif;
+  color: var(--main-text);
 }
 
 h1 {
-  font-size: 150px;
+  font-size: 170px;
   font-family: "Caveat", cursive;
   color: var(--primary-accent);
   opacity: 87%;
@@ -21,6 +22,24 @@ h2 {
   color: var(--emphasis-text);
   font-size: 32px;
   margin-bottom: 0px;
+}
+
+.navbar {
+  background-color: #1e1e1e;
+}
+
+.nav-link {
+  color: var(--secondary-accent);
+  opacity: 60%;
+}
+
+.active {
+  opacity: 87%;
+}
+
+.nav-link:hover {
+  color: var(--secondary-accent);
+  opacity: 50%;
 }
 
 .site {
@@ -34,7 +53,7 @@ h2 {
 
 .hero p {
   color: var(--main-text);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contact-links i {
@@ -43,7 +62,36 @@ h2 {
   opacity: 87%;
 }
 
-.project-display {
+.hero i {
+  transition: 100ms ease-in-out;
+}
+
+.hero i:hover {
+  opacity: 50%;
+}
+
+.down-arrow {
+  padding-top: 80px;
+}
+
+.bi-arrow-down {
+  font-size: 30px;
+  color: var(--main-text);
+}
+
+.homepage-text {
+  font-size: larger;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.homepage-text a {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
+#project-display {
   padding: 70px 0px;
 }
 
@@ -59,7 +107,7 @@ h2 {
 }
 
 .project {
-  padding: 0px 30px;
+  padding: 30px 50px;
 }
 
 .card-img {
@@ -81,4 +129,31 @@ h2 {
 
 .project:hover .project-text {
   opacity: 1;
+}
+
+.contact-btn {
+  padding-bottom: 50px;
+}
+
+.contact-btn a {
+  transition: 100ms ease-in-out;
+}
+
+.contact-btn a:hover {
+  opacity: 50%;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-accent);
+  transition: 100ms ease-in-out;
+}
+
+.footer a:hover {
+  opacity: 50%;
 }
